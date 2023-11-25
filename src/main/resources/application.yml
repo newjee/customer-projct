@@ -1,0 +1,15 @@
+server:
+  port: 9192
+
+spring:
+  datasource:
+    url: jdbc:mariadb://127.0.0.1:3306/shopping_db?charset=utf8
+    username: shopping
+    password: shopping
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      format_sql: true
+    show-sql: true
