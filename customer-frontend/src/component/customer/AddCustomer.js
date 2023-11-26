@@ -26,8 +26,8 @@ const AddCustomer = () => {
   }
 
   return (
-    <div className="col-sm-8 py-5 px-5 offset-2 shadow ">
-      <h2 className="mt-5"> Add Customer </h2>
+    <div className="col-sm-8 py-2 px-5 offset-2 shadow ">
+      <h2 className="mt-5 py-2 mb-4 "> Add Customer </h2>
       <form onSubmit={(e) => saveCustomer(e)}>
 
         <div className="input-group mb-5">
@@ -98,20 +98,23 @@ const AddCustomer = () => {
           />
         </div>
 
-        <div className="col-sm-2">
-          <button
-            type="submit"
-            className="btn btn-outline-success brn-lg">
-            Save
-          </button>
-        </div>
-        
-        <div className="col-sm-2">
-          <Link to="/view-customers"
-            type="submit"
-            className="btn btn-outline-warning brn-lg">
-            Cancel
-          </Link>
+        <div className="row mb-5">
+          <div className="col-sm-2">
+            <button
+              type="submit"
+              className="btn btn-outline-success btn-lg">
+              Save
+            </button>
+          </div>
+
+          <div className="col-sm-2">
+            <Link
+              to={"/view-students"}
+              type="submit"
+              className="btn btn-outline-warning btn-lg">
+              Cancel
+            </Link>
+          </div>
         </div>
       </form >
 
