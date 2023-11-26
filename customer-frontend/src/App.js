@@ -6,6 +6,7 @@ import CustomersView from './component/customer/CustomersView';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import AddCustomer from "./component/customer/AddCustomer.js";
+import EditCustomer from "./component/customer/EditCustomer.js";
 
 
 function App() {
@@ -27,6 +28,10 @@ function App() {
             exact
             path="/add-customers"
             element={<AddCustomer />}> </Route>
+          <Route
+            exact
+            path="/edit-customer/:id"
+            element={<EditCustomer />}> </Route>
         </Routes>
       </Router>
 
